@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    background-color: #E5E5E5;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.container{
+    background-color:#FCFCFC;
+    display: flex;
+    position: relative;
+    justify-content: end;
+    width: 655px;
+    min-height: 347px; 
+    max-height: 100%;   
+    align-items: center;
+    border-radius: 20px;
+}
+
+.limita-container{
+    max-height: 470px;
+    background-color: #E5E5E5;
+    margin-top: 50px;
+}
+
+.container .imagem-principal{
+    position: absolute;
+    left: -100px;   
+}
+
+.container .area-de-perguntas{
+    width: 60%;
+    height: 100%;
+    padding-top: 10px;
+    padding-right: 37px;
+}
+
+.container .area-de-perguntas h2{
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+
+
+.container .area-de-perguntas .pergunta .texto-e-seta .setas .absolute{
+    position: absolute;
+    right: 10px;
+}
+
+.container .area-de-perguntas .pergunta .texto-e-seta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.container .area-de-perguntas hr{
+    display: block;
+    width: 100%;
+    height: 0px;
+    border: solid 0.1px #D4D4D4;
+    margin-block: 15px;
+}
+
+.none{
+    display: none;  
+}
+
+.contend{
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.conteudo-mostrado{
+    transition: 2s ease-in-out;
+    animation: slide-back 0.8s;
+}
+.container .area-de-perguntas .texto-e-seta{
+    background-image: url(../images/Design\ sem\ nome\ \(5\)\ 1.png) ;
+    background-repeat: no-repeat;
+    background-position: right 10px  ;
+  
+}
+
+
+.container .area-de-perguntas .texto-e-seta.ativo{
+    background-image: url(../images/seta\ aberta.png) ;
+}
+
+
+@keyframes slide-back{
+    0% {
+        transform: translatey(-10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
+@media(max-width: 870px){
+
+    .main{
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+   .main .container{
+        max-width: 300px;
+        min-height: 250px;
+        margin-left: 60px;
+       
+    }
+
+    .container .imagem-principal{
+        position: absolute;
+        left: -60px;  
+        max-width: 170px; 
+    }
+    
+    .container .area-de-perguntas{
+      padding-right: 30px;
+    }
+
+    .container .area-de-perguntas .pergunta .texto-e-seta p {
+         font-size: 14px;
+    }
+
+    .container .area-de-perguntas .pergunta .contend{
+        font-size: 10px;
+    }  
+
+
+    .container .area-de-perguntas .texto-e-seta{
+        background-position: right 20px  ;
+        width: 110%;
+    }
+    
+}
+

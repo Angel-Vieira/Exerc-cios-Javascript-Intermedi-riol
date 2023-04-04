@@ -1,0 +1,7 @@
+.campo-preenchido{
+    border-color: green;
+}
+
+.campo-vazio{
+    border-color: black;
+}

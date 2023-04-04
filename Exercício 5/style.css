@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    font-family: Roboto;  
+}
+
+.background-rosa{
+    background: url(./img/imagem\ \(3\).png);
+    background-size: cover;
+    opacity: 0;
+    position: absolute; 
+  
+}
+
+.background-verde{
+    background: url(./img/imagem.png);
+    background-size: cover;
+    opacity: 0;
+    position: absolute; 
+} 
+
+.background-laranja{
+    background: url(./img/imagem\ \(1\).png);
+    background-size: cover;
+    opacity: 0;
+    position: absolute; 
+}
+
+.background-azul{
+    background: url(./img/imagem\ \(2\).png);
+    background-size: cover;
+    opacity: 0;
+    position: absolute; 
+}
+
+main a .opacity{
+    opacity: 0.6;
+    cursor: default;
+}
+
+.botaoVermelho{
+    color: red;
+}
+
+.botaoAmarelo{
+    color:yellow;
+}
+
+.botaoMarrom{
+    color: brown;
+}
+
+.botaoAzul{
+    color: blue;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 40px;
+    transition: 0.7s ease-in-out;
+  
+}
+
+main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 100vh;
+    min-height: 100vh;
+
+}
+
+main  .seta-esquerda{
+    transform: rotate(180deg);
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    margin: 20px;
+}
+main  .seta-direita{
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    height: 50px;
+    z-index: 2;
+   
+}
+
+main .container{
+    max-width: 420px;
+    padding: 20px 40px;
+    margin-left: 90px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column; 
+    opacity: 0.8;
+}
+
+
+main .container p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-block: 30px;
+    max-width: 250px;
+} 
+
+
+ .selecionado{
+    opacity: 1;
+    z-index: 1;  
+} 
